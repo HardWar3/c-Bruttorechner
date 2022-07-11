@@ -1,0 +1,184 @@
+#ifndef _USER_DATEN_H_
+#define _USER_DATEN_H_ 1
+#include <assert.h>
+
+struct user_daten {
+
+// -----------------------------------------------------------------------------------------------
+// Eingabeparameter
+// ------------------------------------------------------------------------------------------------
+
+	int af;	
+	int ajahr;
+	int alter1;
+	long entsch;
+	double f;
+	long jfreib;
+	long jhinzu;
+	long jre4;
+	long jre4ent;
+	long jvbez;
+	int krv;
+	double kvz;
+	int lzz;
+	long lzzfreib;
+	long lzzhinzu;
+	long pkpv;
+	int pkv;
+	int pvs;
+	int pvz;
+	int r;	
+	long re4;
+	long sonstb;
+	long sonstent;
+	long sterbe;  
+	int stkl;
+	long vbez;    
+	long vbezm;   
+	long vbezs;   
+	long vbs;
+	int vjahr;    
+	long vkapa;
+	long vmt;
+	double zkf;
+	int zmvb;
+
+
+// ------------------------------------------------------------------------------------------------
+// Ausgabeparameter
+// ------------------------------------------------------------------------------------------------
+
+	long bk;
+	long bks;
+	long bkv;
+	long lstlzz;
+	long solzlzz;
+	long solzs;
+	long solzv;
+	long sts;
+	long stv;
+	long vkvlzz;
+	long vkvsonst;
+
+// ------------------------------------------------------------------------------------------------
+// interne Felder or Ausgabeparameter DBA
+// ------------------------------------------------------------------------------------------------
+
+	long vfrb;
+	long vfrbs1;
+	long vfrbs2;
+	long wvfrb;
+	long wvfrbm;
+	long wvfrbo;
+
+
+// ------------------------------------------------------------------------------------------------
+// Interne Felder
+// ------------------------------------------------------------------------------------------------
+
+	double alte;
+	long anp;
+	long anteil1;
+	long bbgkvpv;
+	long bbgrv;
+	double bmg;
+	long diff;
+	long efa;
+	double fvb;
+	double fvbso;
+	long fvbz;
+	long fvbzso;
+	long gfb;
+	long hbalte;
+	long hfvb;
+	double hfvbz;
+	double hfvbzso;
+	long hoch;
+	int j;
+	long jbmg;
+	double jlfreib;
+	double jlhinzu;
+	long jw;
+	int k;
+	int kennvmt;
+	long kfb;
+	double kvsatzag;
+	double kvsatzan;
+	int kztab;
+	long lstjahr;
+	long lst1;
+	long lst2;
+	long lst3;
+	long lstoso;
+	long lstso;
+	long mist;
+	double pvsatzag;
+	double pvsatzan;
+	double rvsatzan;
+	double rw;
+	long sap;
+	long solzfrei;
+	double solzj;
+	double solzmin;
+	long st;
+	long st1;
+	long st2;
+	long stovmt;
+	double tab1;
+	long tab2;
+	long tab3;
+	double tab4;
+	long tab5;
+	double tbsvorv;
+	long vbezb;
+	long vbezbso;
+	long vergl;
+	double vhb;
+	long vkv;
+	double vsp;
+	double vspn;
+	double vsp1;
+	double vsp2;
+	double vsp3;
+	long w1stkl5;
+	long w2stkl5;
+	long w3stkl5;
+	double x;
+	double y;
+	double zre4;
+	double zre4j;
+	double zre4vp;
+	double ztabfb;
+	double zvbez;
+	double zvbezj;
+	double zve;
+	long zx;
+	long zzx;
+
+// ------------------------------------------------------------------------------------------------
+// eigene Felder
+// ------------------------------------------------------------------------------------------------
+
+	double rv;
+	double av;
+	double kv;
+	double pv_an;
+	double pv_ag;
+	double kst;
+	double gesamt_st;
+	double sum_sozialv_an;
+	double sum_sozialv_ag;
+	double netto_lohn;
+	double gesamt_belast_ag;
+
+// ------------------------------------------------------------------------------------------------
+// ID Feld
+// ------------------------------------------------------------------------------------------------
+	
+	long id_nummer;
+
+};
+
+extern struct user_daten* new_daten();
+
+#endif
